@@ -1,0 +1,271 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.nft__phone{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    max-height: 100%;
+    height: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: $White;
+    margin-bottom: 40px;
+}
+
+.nft__phone-header {
+    background-image: linear-gradient(
+      to right,
+      $LightViolet,
+      $LightMagenta
+    );
+    border-radius: 20px 20px 8px 8px;
+    width: 100%;
+    height: 60px;
+}
+
+.nft__phone-header-camera{
+    background-color: $White;
+    height: 20px;
+    width: 130px;
+    margin: auto;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.nft__phone-header-description {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: $White;
+    display: flex;
+    justify-content: space-between;
+    &.uil-angle-left {
+        font-size: 20px;
+    }
+}
+
+.nft__phone-header-left {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+}
+
+.nft__uil-ellipsis-v {
+    margin-right: 15px;
+}
+
+.nft__phone-header-description img {
+    width: 25px;
+    border: 1px solid $White;
+    border-radius: 50px;
+}
+
+.nft__name {
+    font-size: 12px;
+}
+  
+.nft__availability {
+    font-size: 8px;
+    color: $LightGrayish;
+}
+
+.nft__phone-body {
+    overflow: auto;
+    width: 100%;
+    flex-grow: 1;
+    border-radius: 0px 0px 20px 20px;
+    background-color: $LightGrayish;
+}
+  
+.nft__phone-body .nft__message {
+    font-size: 8px;
+    display: inline-block;
+    margin-top: 7px;
+}
+  
+.nft__phone-body .left p {
+    background-color: hsl(0, 14%, 91%);
+    color: $ModerateViolet;
+    border-radius: 10px 10px 10px 5px;
+    padding: 7px;
+    margin-left: 10px;
+}
+  
+.nft__phone-body .right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.nft__pictures {
+    margin-top: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.nft__pictures img {
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+  
+.nft__phone-body .right p {
+    background-color: $White;
+    border-radius: 10px 10px 5px 10px;
+    padding: 7px;
+    margin-right: 10px;
+}
+  
+.nft__payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    margin-left: 10px;
+    margin-top: 7px;
+    color: $White;
+    background-image: linear-gradient(
+      to left,
+      $LightViolet,
+      $LightMagenta
+    );
+    padding: 7px;
+    border-radius: 10px 10px 10px 5px;
+}
+.nft__payment-left {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+  
+.nft__payment-left i {
+    color: $LightGrayish;
+}
+  
+.nft__payment p {
+    font-size: 8px;
+    margin-left: 5px;
+}
+  
+.nft__payment .nft__amount {
+    font-size: 14px;
+    font-weight: 700;
+}
+  
+.nft__type-message {
+    margin: auto;
+    margin-top: 20px;
+    background-color: $White;
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.nft__type-message p {
+    font-size: 10px;
+    color: $LightGrayish;
+    margin-left: 15px;
+}
+  
+.nft__type-message .nft__send {
+    width: 30px;
+    height: 30px;
+    background-color: $VeryDarkDesaturatedViolet;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    border-radius: 100px;
+}
+  
+.nft__type-message .send i {
+    color: $White;
+}
+  
+.nft__description-head,
+.nft__description-text {
+    text-align: center;
+}
+  
+.nft__description-head {
+    color: $VeryDarkDesaturatedViolet;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+  
+.nft__description-text {
+    color: $DarkGrayishViolet;
+    font-size: 14px;
+    width: 70%;
+    margin: auto;
+    font-weight: normal;
+}
+  
+.nft__purpleBody {
+    background-image: linear-gradient(
+      to top left,
+      $LightViolet,
+      $LightMagenta
+    );
+    width: 50%;
+    height: 400px;
+    align-self: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 0 1000px 0px;
+}
+  
+.nft__greybody {
+    background-color: hsl(0, 14%, 91%);
+    width: 25%;
+    height: 550px;
+    align-self: flex-start;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 1000px 0px 0px 0px;
+}
+  
+@media only screen and (min-width: 1000px) {
+    .container{
+        flex-direction: row;
+        align-items: center;
+    }
+    body {
+      flex-direction: row;
+    }
+  
+    .nft__description {
+      margin-left: 100px;
+    }
+  
+    .nft__description-head {
+      text-align: left;
+    }
+  
+    .nft__description-text {
+      width: 400px;
+      text-align: left;
+    }
+  
+    .nft__purpleBody {
+      width: 30%;
+      border-radius: 0 0 1000px 1000px;
+      height: 550px;
+    }
+  
+    .nft_greybody {
+      width: 25%;
+      height: 550px;
+    }
+}
